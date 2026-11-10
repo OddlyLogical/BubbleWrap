@@ -1,0 +1,13 @@
+plugins { id 'com.android.library' version '8.6.1' }
+android {
+    namespace 'com.bubblewrap.haptics'
+    compileSdk 35
+    defaultConfig { minSdk 24 }
+    compileOptions { sourceCompatibility JavaVersion.VERSION_17; targetCompatibility JavaVersion.VERSION_17 }
+}
+dependencies { compileOnly 'org.godotengine:godot:4.5.1.stable' }
+tasks.register('installPlugin', Copy) {
+    dependsOn 'assembleRelease'
+    from('build/outputs/aar') { include '*-release.aar'; rename { 'BubbleHaptics.aar' } }
+    into '../../addons/bubble_haptics/bin'
+}

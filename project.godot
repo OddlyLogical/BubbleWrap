@@ -1,0 +1,27 @@
+config_version=5
+[application]
+config/name="Bubble Wrap"
+config/icon="res://Assets/Icons/icon.svg"
+run/main_scene="res://Scenes/Main.tscn"
+config/features=PackedStringArray("4.5", "C#", "GL Compatibility")
+[display]
+window/size/viewport_width=432
+window/size/viewport_height=936
+window/size/window_width_override=432
+window/size/window_height_override=936
+window/stretch/mode="canvas_items"
+window/handheld/orientation=1
+[rendering]
+textures/vram_compression/import_etc2_astc=true
+renderer/rendering_method="gl_compatibility"
+renderer/rendering_method.mobile="gl_compatibility"
+environment/defaults/default_clear_color=Color(0.87,0.93,0.95,1)
+[dotnet]
+project/assembly_name="BubbleWrap"
+[input_devices]
+pointing/emulate_touch_from_mouse=false
+pointing/emulate_mouse_from_touch=true
+[audio]
+driver/output_latency=15
+[editor_plugins]
+enabled=PackedStringArray("res://addons/bubble_haptics/plugin.cfg")

@@ -1,0 +1,16 @@
+.godot/
+bin/
+obj/
+build/
+Android/HapticsPlugin/.gradle/
+Android/HapticsPlugin/build/
+Android/HapticsPlugin/local.properties
+android/build/
+*.user
+
+# Visual Studio local settings
+.vs/
+# Signing credentials
+*.keystore
+*.jks
+export_credentials.cfg
